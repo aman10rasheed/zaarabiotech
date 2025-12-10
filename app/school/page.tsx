@@ -66,10 +66,10 @@ export default function SchoolPage() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
+                <Button size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl">
                   Apply Now <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-full">
+                <Button variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-xl">
                   Download Brochure
                 </Button>
               </div>
@@ -154,7 +154,7 @@ export default function SchoolPage() {
                   </CardHeader>
                   <CardContent className="p-6">
                     <p className="text-gray-600 mb-6">{program.description}</p>
-                    <Button className="w-full bg-[#166534] hover:bg-[#14532d] text-white rounded-full group-hover:translate-y-0 transition-transform">
+                    <Button className="w-full bg-[#166534] hover:bg-[#14532d] text-white rounded-xl group-hover:translate-y-0 transition-transform">
                       Learn More <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   </CardContent>
@@ -285,7 +285,7 @@ export default function SchoolPage() {
                   placeholder="Enter your email"
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/50 rounded-full"
                 />
-                <Button className="bg-white text-[#166534] hover:bg-white/90 rounded-full px-6">
+                <Button className="bg-white text-[#166534] hover:bg-white/90 rounded-xl px-6">
                   Apply <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </div>

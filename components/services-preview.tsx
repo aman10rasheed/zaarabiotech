@@ -68,7 +68,7 @@ export const ServicesPreview = () => {
           transition={{ delay: 0.2 }}
           className="text-gray-600 text-lg max-w-2xl mx-auto"
         >
-          From concept to commercialization, we provide end-to-end biotechnology 
+          From concept to commercialization, we provide end-to-end biotechnology
           solutions for the world&apos;s most ambitious companies.
         </motion.p>
       </div>
@@ -131,7 +131,7 @@ export const ServicesPreview = () => {
           asChild
           size="lg"
           variant="outline"
-          className="border-2 border-[#166534] text-[#166534] hover:bg-[#166534] hover:text-white rounded-full px-8"
+          className="border-2 border-[#166534] text-[#166534] hover:bg-[#166534] hover:text-white rounded-xl px-8"
         >
           <Link href="/services">
             View All Services

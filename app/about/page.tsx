@@ -233,12 +233,12 @@ export default function AboutPage() {
             Continue Exploring
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
+            <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl">
               <Link href="/about/leadership">
                 Meet Our Team <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-full">
+            <Button asChild variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-xl">
               <Link href="/about/sustainability">
                 Sustainability & Obelia
               </Link>

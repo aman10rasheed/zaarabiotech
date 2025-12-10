@@ -250,12 +250,12 @@ export default function ServicesPage() {
               Let&apos;s discuss how our R&D capabilities can bring your vision to life.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild size="lg" className="bg-white text-[#166534] hover:bg-white/90 rounded-full">
+              <Button asChild size="lg" className="bg-white text-[#166534] hover:bg-white/90 rounded-xl">
                 <Link href="/contact">
                   Schedule Consultation <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10 rounded-full">
+              <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10 rounded-xl">
                 <Link href="/school">
                   Explore Product School
                 </Link>

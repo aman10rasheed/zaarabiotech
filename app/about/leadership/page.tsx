@@ -214,7 +214,7 @@ export default function LeadershipPage() {
             We&apos;re always looking for passionate individuals to join our team and 
             help shape the future of sustainable biotechnology.
           </p>
-          <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
+          <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl">
             <Link href="/contact">
               Get in Touch <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

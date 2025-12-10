@@ -65,7 +65,7 @@ export const BliteShowcase = () => {
             <Button
               asChild
               size="lg"
-              className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8 group"
+              className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-8 group"
             >
               <a href="https://blitestore.com" target="_blank" rel="noopener noreferrer">
                 Shop B-Lite
@@ -76,7 +76,7 @@ export const BliteShowcase = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-[#92400e] text-[#92400e] hover:bg-[#92400e] hover:text-white rounded-full px-8"
+              className="border-2 border-[#92400e] text-[#92400e] hover:bg-[#92400e] hover:text-white rounded-xl px-8"
             >
               <a href="https://blitestore.com" target="_blank" rel="noopener noreferrer">
                 Subscribe & Save

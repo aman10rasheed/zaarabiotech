@@ -87,7 +87,7 @@ export const ObeliaBanner = () => {
             <Button
               asChild
               size="lg"
-              className="bg-white text-[#0c4a6e] hover:bg-white/90 rounded-full px-8 group"
+              className="bg-white text-[#0c4a6e] hover:bg-white/90 rounded-xl px-8 group"
             >
               <Link href="/about/sustainability">
                 Explore Obelia

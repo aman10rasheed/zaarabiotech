@@ -68,7 +68,7 @@ export default function StorePage() {
               <Button
                 asChild
                 size="lg"
-                className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8 group"
+                className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-8 group"
               >
                 <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
                   Visit B-Lite Store
@@ -112,7 +112,7 @@ export default function StorePage() {
             </div>
             <Button 
               asChild
-              className="bg-white text-[#166534] hover:bg-white/90 rounded-full"
+              className="bg-white text-[#166534] hover:bg-white/90 rounded-xl"
             >
               <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
                 Shop Now <ExternalLink className="ml-2 w-4 h-4" />
@@ -195,7 +195,7 @@ export default function StorePage() {
           <Button
             asChild
             size="lg"
-            className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8"
+            className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-8"
           >
             <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
               View All Products on B-Lite Store
@@ -274,7 +274,7 @@ export default function StorePage() {
             <Button
               asChild
               size="lg"
-              className="bg-white text-[#166534] hover:bg-white/90 rounded-full"
+              className="bg-white text-[#166534] hover:bg-white/90 rounded-xl"
             >
               <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
                 Shop Now on B-Lite Store

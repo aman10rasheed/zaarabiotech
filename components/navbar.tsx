@@ -72,9 +72,8 @@ const NavDropdown = ({ label, children, isOpen, onToggle }: DropdownProps) => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`block px-4 py-3 hover:bg-[#f0fdf4] transition-colors ${
-                    pathname === item.href ? 'bg-[#f0fdf4] border-l-2 border-[#166534]' : ''
-                  }`}
+                  className={`block px-4 py-3 hover:bg-[#f0fdf4] transition-colors ${pathname === item.href ? 'bg-[#f0fdf4] border-l-2 border-[#166534]' : ''
+                    }`}
                 >
                   <div className="font-medium text-gray-900">{item.label}</div>
                   {item.description && (
@@ -103,7 +102,7 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/90 border-b border-gray-100"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
@@ -111,7 +110,8 @@ export const Navbar = () => {
               alt="Zaara Biotech Logo"
               width={300}
               height={80}
-              className="w-auto h-30"
+              className="h-12 sm:h-14 md:h-16 lg:h-30 w-auto"
+              priority
             />
           </Link>
 
@@ -142,9 +142,8 @@ export const Navbar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-gray-700 hover:text-[#166534] font-medium transition-colors relative py-2 ${
-                    pathname === item.href ? 'text-[#166534]' : ''
-                  }`}
+                  className={`text-gray-700 hover:text-[#166534] font-medium transition-colors relative py-2 ${pathname === item.href ? 'text-[#166534]' : ''
+                    }`}
                 >
                   {item.label}
                   {pathname === item.href && (
@@ -162,7 +161,7 @@ export const Navbar = () => {
           <div className="hidden lg:block">
             <Button
               asChild
-              className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-6"
+              className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-6"
             >
               <Link href="/contact">Get in Touch</Link>
             </Button>
@@ -182,12 +181,12 @@ export const Navbar = () => {
                   <Image
                     src="/logo.png"
                     alt="Zaara Biotech Logo"
-                    width={180}
-                    height={55}
-                    className="w-auto"
+                    width={200}
+                    height={60}
+                    className="h-14 w-auto"
                   />
                 </div>
-                
+
                 <nav className="flex flex-col gap-1">
                   {navItems.map((item) =>
                     'children' in item && item.children ? (
@@ -199,9 +198,8 @@ export const Navbar = () => {
                           <SheetClose key={child.href} asChild>
                             <Link
                               href={child.href}
-                              className={`block px-3 py-2 rounded-lg hover:bg-[#f0fdf4] transition-colors ${
-                                pathname === child.href ? 'bg-[#f0fdf4] text-[#166534]' : 'text-gray-700'
-                              }`}
+                              className={`block px-3 py-2 rounded-lg hover:bg-[#f0fdf4] transition-colors ${pathname === child.href ? 'bg-[#f0fdf4] text-[#166534]' : 'text-gray-700'
+                                }`}
                             >
                               {child.label}
                             </Link>
@@ -223,9 +221,8 @@ export const Navbar = () => {
                       <SheetClose key={item.href} asChild>
                         <Link
                           href={item.href}
-                          className={`block px-3 py-3 rounded-lg hover:bg-[#f0fdf4] transition-colors font-medium ${
-                            pathname === item.href ? 'bg-[#f0fdf4] text-[#166534]' : 'text-gray-700'
-                          }`}
+                          className={`block px-3 py-3 rounded-lg hover:bg-[#f0fdf4] transition-colors font-medium ${pathname === item.href ? 'bg-[#f0fdf4] text-[#166534]' : 'text-gray-700'
+                            }`}
                         >
                           {item.label}
                         </Link>
@@ -238,7 +235,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Button
                       asChild
-                      className="w-full bg-[#166534] hover:bg-[#14532d] text-white rounded-full"
+                      className="w-full bg-[#166534] hover:bg-[#14532d] text-white rounded-xl"
                     >
                       <Link href="/contact">Get in Touch</Link>
                     </Button>

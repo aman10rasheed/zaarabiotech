@@ -58,7 +58,7 @@ export default function AgroPage() {
             <p className="text-xl text-white/90 leading-relaxed mb-8">
               {agro.description}
             </p>
-            <Button size="lg" className="bg-white text-[#166534] hover:bg-white/90 rounded-full">
+            <Button size="lg" className="bg-white text-[#166534] hover:bg-white/90 rounded-xl">
               Explore Solutions <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </motion.div>
@@ -150,7 +150,7 @@ export default function AgroPage() {
                 </li>
               ))}
             </ul>
-            <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
+            <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl">
               <Link href="/contact">
                 Request Sample <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
@@ -302,7 +302,7 @@ export default function AgroPage() {
             Contact our agricultural experts to discuss how our bio-fertilizers and 
             smart farming solutions can improve your yields.
           </p>
-          <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
+          <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl">
             <Link href="/contact">
               Get Consultation <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

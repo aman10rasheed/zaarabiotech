@@ -35,7 +35,7 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
       {/* Background */}
       <div className="absolute inset-0 hero-gradient" />
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Large gradient orbs */}
@@ -64,7 +64,7 @@ export const HeroSection = () => {
           }}
           className="absolute -bottom-1/3 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#166534]/20 to-[#0c4a6e]/10"
         />
-        
+
         {/* Molecular/scientific dots pattern */}
         <div className="absolute inset-0 opacity-30">
           {[...Array(15)].map((_, i) => (
@@ -124,7 +124,7 @@ export const HeroSection = () => {
               variants={itemVariants}
               className="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl leading-relaxed"
             >
-              Pioneering biotechnology to address global energy and food crises 
+              Pioneering biotechnology to address global energy and food crises
               through micro-algae innovation. From our Kerala labs to global markets.
             </motion.p>
 
@@ -152,7 +152,7 @@ export const HeroSection = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8 py-6 text-lg group"
+                className="bg-[#166534] hover:bg-[#14532d] text-white rounded-xl px-8 py-6 text-lg group"
               >
                 <Link href="/services">
                   Explore Our Services
@@ -163,7 +163,7 @@ export const HeroSection = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-[#0c4a6e] text-[#0c4a6e] hover:bg-[#0c4a6e] hover:text-white rounded-full px-8 py-6 text-lg"
+                className="border-2 border-[#0c4a6e] text-[#0c4a6e] hover:bg-[#0c4a6e] hover:text-white rounded-xl px-8 py-6 text-lg"
               >
                 <Link href="/about">
                   <Play className="mr-2 w-5 h-5" />

@@ -247,7 +247,7 @@ export default function InsightsPage() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-full">
+          <Button variant="outline" size="lg" className="border-2 border-[#166534] text-[#166534] rounded-xl">
             Load More Articles
           </Button>
         </div>
@@ -274,7 +274,7 @@ export default function InsightsPage() {
                   placeholder="Enter your email"
                   className="bg-white/10 border-white/20 text-white placeholder:text-white/50 rounded-full"
                 />
-                <Button className="bg-white text-[#166534] hover:bg-white/90 rounded-full px-6">
+                <Button className="bg-white text-[#166534] hover:bg-white/90 rounded-xl px-6">
                   Subscribe
                 </Button>
               </div>

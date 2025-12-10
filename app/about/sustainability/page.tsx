@@ -319,7 +319,7 @@ export default function SustainabilityPage() {
               Contact us to learn how we can transform your built environment 
               into a living, breathing ecosystem.
             </p>
-            <Button asChild size="lg" className="bg-white text-[#0c4a6e] hover:bg-white/90 rounded-full">
+            <Button asChild size="lg" className="bg-white text-[#0c4a6e] hover:bg-white/90 rounded-xl">
               <Link href="/contact">
                 Request Consultation <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
