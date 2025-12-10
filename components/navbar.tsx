@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, ChevronDown, Leaf, X } from 'lucide-react';
@@ -34,7 +35,7 @@ const navItems = [
     ],
   },
   { href: '/agro', label: 'Agro Division' },
-  { href: '/store', label: 'B-Lite Store' },
+  { href: 'https://blitestore.com', label: 'B-Lite Store', external: true },
   { href: '/school', label: 'Product School' },
 ];
 
@@ -105,9 +106,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#166534] to-[#22c55e] flex items-center justify-center">
-              <Leaf className="w-5 h-5 text-white" />
-            </div>
+            <Image
+              src="/cropped-logo.webp"
+              alt="Zaara Biotech Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-[#166534] group-hover:text-[#14532d] transition-colors leading-tight">
                 Zaara Biotech
@@ -131,6 +136,16 @@ export const Navbar = () => {
                     setOpenDropdown(openDropdown === item.label ? null : item.label)
                   }
                 />
+              ) : 'external' in item && item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-[#166534] font-medium transition-colors relative py-2"
+                >
+                  {item.label}
+                </a>
               ) : (
                 <Link
                   key={item.href}
@@ -172,9 +187,13 @@ export const Navbar = () => {
             <SheetContent side="right" className="w-[320px] bg-white overflow-y-auto">
               <div className="flex flex-col gap-6 mt-8">
                 <div className="flex items-center gap-2 pb-4 border-b border-gray-100">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#166534] to-[#22c55e] flex items-center justify-center">
-                    <Leaf className="w-5 h-5 text-white" />
-                  </div>
+                  <Image
+                    src="/cropped-logo.webp"
+                    alt="Zaara Biotech Logo"
+                    width={40}
+                    height={40}
+                    className="rounded-full"
+                  />
                   <div>
                     <span className="text-xl font-bold text-[#166534]">Zaara Biotech</span>
                     <p className="text-xs text-gray-500">Engineering Nature&apos;s Intelligence</p>
@@ -201,6 +220,17 @@ export const Navbar = () => {
                           </SheetClose>
                         ))}
                       </div>
+                    ) : 'external' in item && item.external ? (
+                      <SheetClose key={item.href} asChild>
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-3 py-3 rounded-lg hover:bg-[#f0fdf4] transition-colors font-medium text-gray-700"
+                        >
+                          {item.label}
+                        </a>
+                      </SheetClose>
                     ) : (
                       <SheetClose key={item.href} asChild>
                         <Link

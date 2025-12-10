@@ -98,7 +98,7 @@ export const bliteProducts = [
     category: "sports",
     description: "The Athlete's Edge: Bio-engineered for peak performance and rapid recovery.",
     ingredients: "Algae-based formula designed for sports and fitness diet",
-    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400",
+    image: "/5.png",
     benefits: ["High Protein", "Energy Boost", "Rapid Recovery"],
   },
   {
@@ -108,7 +108,7 @@ export const bliteProducts = [
     category: "general",
     description: "Superfood Indulgence: The power of Spirulina masked in rich chocolate.",
     ingredients: "Spirulina (Blue-green algae), Demerara Sugar, Millets. 11.4g Single cell protein.",
-    image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=400",
+    image: "/10-2.png",
     benefits: ["11.4g Protein", "Rich in Fiber", "Zero Cholesterol"],
   },
   {

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { SectionWrapper } from './section-wrapper';
 import { Quote, Award } from 'lucide-react';
 import { companyInfo, milestones } from '@/lib/data';
@@ -35,8 +36,14 @@ export const CeoMessage = () => {
             </blockquote>
 
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#166534] to-[#22c55e] flex items-center justify-center text-white font-bold text-xl">
-                {companyInfo.founder.initials}
+              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#166534]">
+                <Image
+                  src="/IMG_0739-qofqvnaq8rpc3ohhry5z1x6ipl8iujgwxed5eu3w2w.jpg"
+                  alt={companyInfo.founder.name}
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <div className="font-bold text-[#1a1a1a] text-lg">

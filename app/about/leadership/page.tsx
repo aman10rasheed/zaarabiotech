@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { SectionWrapper } from '@/components/section-wrapper';
@@ -91,8 +92,14 @@ export default function LeadershipPage() {
         >
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="text-center md:text-left">
-              <div className="w-32 h-32 mx-auto md:mx-0 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-4xl font-bold mb-4">
-                {companyInfo.founder.initials}
+              <div className="w-32 h-32 mx-auto md:mx-0 rounded-full overflow-hidden border-4 border-white/30 mb-4">
+                <Image
+                  src="/Screenshot 2025-12-10 at 1.21.08 PM.png"
+                  alt={companyInfo.founder.name}
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex justify-center md:justify-start gap-3 mt-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">

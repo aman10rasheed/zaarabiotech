@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Navbar from '@/components/navbar';
@@ -8,25 +8,12 @@ import Footer from '@/components/footer';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { ShoppingBag, Filter, Star, Check, ArrowRight, Heart, Repeat } from 'lucide-react';
+import { ShoppingBag, ExternalLink, Star, Check, ArrowRight, Repeat } from 'lucide-react';
 import { bliteProducts, testimonials } from '@/lib/data';
 
-const categories = [
-  { id: 'all', label: 'All Products' },
-  { id: 'general', label: 'General Wellness' },
-  { id: 'sports', label: 'Sports Nutrition' },
-  { id: 'women', label: "Women's Health" },
-  { id: 'pregnancy', label: 'Prenatal Care' },
-];
+const BLITE_STORE_URL = 'https://blitestore.com';
 
 export default function StorePage() {
-  const [activeCategory, setActiveCategory] = useState('all');
-  
-  const filteredProducts = activeCategory === 'all' 
-    ? bliteProducts 
-    : bliteProducts.filter(p => p.category === activeCategory);
-
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
@@ -36,7 +23,7 @@ export default function StorePage() {
         <div className="absolute inset-0">
           <motion.div
             animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.3, 0.2] }}
-            transition={{ duration: 15, repeat: Infinity }}
+            transition={{ duration: 15, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
             className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] rounded-full bg-[#22c55e]/20"
           />
         </div>
@@ -61,7 +48,8 @@ export default function StorePage() {
                 ICAR-CIFT certified spirulina-based cookies. Each bite delivers 
                 natural proteins, calcium, and iron without compromising taste.
               </p>
-              <div className="flex flex-wrap gap-4">
+              
+              <div className="flex flex-wrap gap-4 mb-8">
                 {[
                   'Zero Trans Fat',
                   '11.4g Protein',
@@ -76,6 +64,17 @@ export default function StorePage() {
                   </span>
                 ))}
               </div>
+
+              <Button
+                asChild
+                size="lg"
+                className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8 group"
+              >
+                <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
+                  Visit B-Lite Store
+                  <ExternalLink className="ml-2 w-5 h-5" />
+                </a>
+              </Button>
             </motion.div>
 
             <motion.div
@@ -86,7 +85,7 @@ export default function StorePage() {
             >
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800"
+                  src="/5.png"
                   alt="B-Lite Products"
                   fill
                   className="object-cover"
@@ -98,8 +97,8 @@ export default function StorePage() {
         </div>
       </section>
 
-      {/* Subscription Banner */}
-      <section id="subscriptions" className="bg-[#166534] py-8">
+      {/* External Store Banner */}
+      <section className="bg-[#166534] py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4 text-white">
@@ -111,89 +110,98 @@ export default function StorePage() {
                 <p className="text-white/80 text-sm">Never run out of your daily nutrition</p>
               </div>
             </div>
-            <Button className="bg-white text-[#166534] hover:bg-white/90 rounded-full">
-              Start Subscription <ArrowRight className="ml-2 w-4 h-4" />
+            <Button 
+              asChild
+              className="bg-white text-[#166534] hover:bg-white/90 rounded-full"
+            >
+              <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
+                Shop Now <ExternalLink className="ml-2 w-4 h-4" />
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Products Preview */}
       <SectionWrapper background="white">
-        {/* Category Filter */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeCategory === category.id
-                  ? 'bg-[#166534] text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#1a1a1a] mb-4">
+            Our Product Range
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Explore our range of spirulina-based functional nutrition products. 
+            Click any product to shop on our official B-Lite store.
+          </p>
         </div>
 
-        {/* Products Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProducts.map((product, index) => (
+          {bliteProducts.map((product, index) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden">
-                <div className="relative aspect-square">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <button className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors">
-                    <Heart className="w-5 h-5" />
-                  </button>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                    <div className="flex items-center gap-1 text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
+              <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
+                <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group overflow-hidden cursor-pointer">
+                  <div className="relative aspect-square bg-[#f0fdf4]">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur rounded-full px-3 py-1">
+                      <span className="text-sm font-bold text-[#166534]">₹{product.price}</span>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                      <div className="flex items-center gap-1 text-yellow-400">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="font-bold text-lg text-[#1a1a1a] mb-2 group-hover:text-[#166534] transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                      {product.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {product.benefits.map((benefit, i) => (
+                        <span
+                          key={i}
+                          className="text-xs px-2 py-1 rounded-full bg-[#f0fdf4] text-[#166534]"
+                        >
+                          {benefit}
+                        </span>
                       ))}
                     </div>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-lg text-[#1a1a1a] mb-2 group-hover:text-[#166534] transition-colors">
-                    {product.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    {product.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {product.benefits.map((benefit, i) => (
-                      <span
-                        key={i}
-                        className="text-xs px-2 py-1 rounded-full bg-[#f0fdf4] text-[#166534]"
-                      >
-                        {benefit}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div className="text-2xl font-bold text-[#166534]">
-                      ₹{product.price}
+                    <div className="flex items-center text-[#166534] font-medium">
+                      Shop Now
+                      <ExternalLink className="ml-2 w-4 h-4" />
                     </div>
-                    <Button className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full">
-                      Add to Cart
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </a>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button
+            asChild
+            size="lg"
+            className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8"
+          >
+            <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
+              View All Products on B-Lite Store
+              <ExternalLink className="ml-2 w-5 h-5" />
+            </a>
+          </Button>
         </div>
       </SectionWrapper>
 
@@ -252,7 +260,7 @@ export default function StorePage() {
               (Central Institute of Fisheries Technology, Govt. of India), ensuring 
               the highest standards of quality and nutrition.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="px-6 py-3 bg-white/10 rounded-full backdrop-blur">
                 ICAR Certified
               </div>
@@ -263,6 +271,16 @@ export default function StorePage() {
                 Govt. of India
               </div>
             </div>
+            <Button
+              asChild
+              size="lg"
+              className="bg-white text-[#166534] hover:bg-white/90 rounded-full"
+            >
+              <a href={BLITE_STORE_URL} target="_blank" rel="noopener noreferrer">
+                Shop Now on B-Lite Store
+                <ExternalLink className="ml-2 w-5 h-5" />
+              </a>
+            </Button>
           </motion.div>
         </div>
       </SectionWrapper>
@@ -271,4 +289,3 @@ export default function StorePage() {
     </main>
   );
 }
-

@@ -2,10 +2,11 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { 
-  Leaf, Mail, MapPin, Phone, ArrowRight, 
+  Mail, MapPin, Phone, ArrowRight, 
   Instagram, Linkedin, Twitter, Youtube,
   Globe
 } from 'lucide-react';
@@ -15,7 +16,7 @@ const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'B-Lite Store', href: '/store' },
+  { label: 'B-Lite Store', href: 'https://blitestore.com', external: true },
   { label: 'Product School', href: '/school' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -56,9 +57,13 @@ export const Footer = () => {
             className="lg:col-span-2"
           >
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-12 h-12 rounded-full bg-white/10 backdrop-blur flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-[#22c55e]" />
-              </div>
+              <Image
+                src="/cropped-logo.webp"
+                alt="Zaara Biotech Logo"
+                width={48}
+                height={48}
+                className="rounded-full"
+              />
               <div>
                 <span className="text-2xl font-bold text-white">
                   Zaara Biotech
@@ -112,12 +117,23 @@ export const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
-                    href={link.href}
-                    className="text-white/70 hover:text-[#22c55e] transition-colors text-sm"
-                  >
-                    {link.label}
-                  </Link>
+                  {'external' in link && link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-[#22c55e] transition-colors text-sm"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-white/70 hover:text-[#22c55e] transition-colors text-sm"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

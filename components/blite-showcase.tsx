@@ -67,10 +67,10 @@ export const BliteShowcase = () => {
               size="lg"
               className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-8 group"
             >
-              <Link href="/store">
+              <a href="https://blitestore.com" target="_blank" rel="noopener noreferrer">
                 Shop B-Lite
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
             <Button
               asChild
@@ -78,9 +78,9 @@ export const BliteShowcase = () => {
               size="lg"
               className="border-2 border-[#92400e] text-[#92400e] hover:bg-[#92400e] hover:text-white rounded-full px-8"
             >
-              <Link href="/store#subscriptions">
+              <a href="https://blitestore.com" target="_blank" rel="noopener noreferrer">
                 Subscribe & Save
-              </Link>
+              </a>
             </Button>
           </div>
         </motion.div>
