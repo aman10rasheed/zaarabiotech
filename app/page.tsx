@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar';
 import HeroSection from '@/components/hero-section';
 import ServicesPreview from '@/components/services-preview';
 import BliteShowcase from '@/components/blite-showcase';
+import { GlobalReachSection } from '@/components/global-reach-section';
 import ObeliaBanner from '@/components/obelia-banner';
 import CeoMessage from '@/components/ceo-message';
 import PartnersSection from '@/components/partners-section';
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <ServicesPreview />
       <BliteShowcase />
+      <GlobalReachSection />
       <ObeliaBanner />
       <CeoMessage />
       <PartnersSection />

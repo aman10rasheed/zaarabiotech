@@ -21,6 +21,7 @@ const navItems = [
     children: [
       { href: '/about', label: 'Corporate Heritage', description: 'Our journey since 2016' },
       { href: '/about/leadership', label: 'Leadership', description: 'Meet our visionary team' },
+      { href: '/about/team', label: 'Our Team', description: 'The people behind the innovation' },
       { href: '/about/sustainability', label: 'Sustainability & Obelia', description: 'Carbon capture innovation' },
     ],
   },
