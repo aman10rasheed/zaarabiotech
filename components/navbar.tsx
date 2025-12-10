@@ -105,22 +105,14 @@ export const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center group">
             <Image
-              src="/cropped-logo.webp"
+              src="/logo.png"
               alt="Zaara Biotech Logo"
-              width={40}
-              height={40}
-              className="rounded-full"
+              width={300}
+              height={80}
+              className="w-auto h-30"
             />
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-[#166534] group-hover:text-[#14532d] transition-colors leading-tight">
-                Zaara Biotech
-              </span>
-              <span className="text-[10px] text-gray-500 hidden sm:block leading-tight">
-                Engineering Nature&apos;s Intelligence
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -186,18 +178,14 @@ export const Navbar = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[320px] bg-white overflow-y-auto">
               <div className="flex flex-col gap-6 mt-8">
-                <div className="flex items-center gap-2 pb-4 border-b border-gray-100">
+                <div className="pb-4 border-b border-gray-100">
                   <Image
-                    src="/cropped-logo.webp"
+                    src="/logo.png"
                     alt="Zaara Biotech Logo"
-                    width={40}
-                    height={40}
-                    className="rounded-full"
+                    width={180}
+                    height={55}
+                    className="w-auto"
                   />
-                  <div>
-                    <span className="text-xl font-bold text-[#166534]">Zaara Biotech</span>
-                    <p className="text-xs text-gray-500">Engineering Nature&apos;s Intelligence</p>
-                  </div>
                 </div>
                 
                 <nav className="flex flex-col gap-1">

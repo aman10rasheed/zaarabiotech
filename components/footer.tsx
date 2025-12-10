@@ -56,21 +56,16 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <Link href="/" className="flex items-center gap-2 mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6">
               <Image
-                src="/cropped-logo.webp"
+                src="/logo.png"
                 alt="Zaara Biotech Logo"
-                width={48}
-                height={48}
-                className="rounded-full"
+                width={180}
+                height={60}
+                className="h-16 w-auto brightness-0 invert"
               />
-              <div>
-                <span className="text-2xl font-bold text-white">
-                  Zaara Biotech
-                </span>
-                <p className="text-sm text-white/60">Engineering Nature&apos;s Intelligence</p>
-              </div>
             </Link>
+            <p className="text-sm text-white/60 italic mb-4">&apos;feeding the nation forward&apos;</p>
             <p className="text-white/70 mb-6 leading-relaxed max-w-md">
               {companyInfo.description}
             </p>
