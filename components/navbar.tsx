@@ -98,7 +98,7 @@ export const Navbar = () => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/90 border-b border-gray-100"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,7 +121,7 @@ export const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) =>
-              'children' in item ? (
+              'children' in item && item.children ? (
                 <NavDropdown
                   key={item.label}
                   label={item.label}
@@ -183,7 +183,7 @@ export const Navbar = () => {
                 
                 <nav className="flex flex-col gap-1">
                   {navItems.map((item) =>
-                    'children' in item ? (
+                    'children' in item && item.children ? (
                       <div key={item.label} className="mb-2">
                         <div className="text-sm font-semibold text-gray-400 uppercase tracking-wider px-3 py-2">
                           {item.label}

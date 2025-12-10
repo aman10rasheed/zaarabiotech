@@ -25,7 +25,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: 'easeOut',
+      ease: [0.25, 0.46, 0.45, 0.94] as const,
     },
   },
 };
@@ -48,7 +48,7 @@ export const HeroSection = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: 'easeInOut',
+            ease: [0.42, 0, 0.58, 1],
           }}
           className="absolute -top-1/4 -right-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-[#22c55e]/20 via-[#0c4a6e]/10 to-transparent"
         />
@@ -60,7 +60,7 @@ export const HeroSection = () => {
           transition={{
             duration: 15,
             repeat: Infinity,
-            ease: 'easeInOut',
+            ease: [0.42, 0, 0.58, 1],
           }}
           className="absolute -bottom-1/3 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#166534]/20 to-[#0c4a6e]/10"
         />
@@ -83,7 +83,7 @@ export const HeroSection = () => {
               transition={{
                 duration: 3 + (i * 0.3),
                 repeat: Infinity,
-                ease: 'easeInOut',
+                ease: [0.42, 0, 0.58, 1],
                 delay: i * 0.2,
               }}
             />
@@ -196,12 +196,12 @@ export const HeroSection = () => {
               {/* Decorative Elements */}
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 60, repeat: Infinity, ease: "linear" as const }}
                 className="absolute inset-0 border-2 border-dashed border-[#22c55e]/30 rounded-full"
               />
               <motion.div
                 animate={{ rotate: -360 }}
-                transition={{ duration: 45, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 45, repeat: Infinity, ease: "linear" as const }}
                 className="absolute inset-4 border-2 border-dashed border-[#0c4a6e]/20 rounded-full"
               />
 

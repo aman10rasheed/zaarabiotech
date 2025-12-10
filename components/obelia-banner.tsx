@@ -21,7 +21,7 @@ export const ObeliaBanner = () => {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: 'easeInOut',
+            ease: [0.42, 0, 0.58, 1],
           }}
           className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#22c55e]/20"
         />
@@ -32,7 +32,7 @@ export const ObeliaBanner = () => {
           transition={{
             duration: 120,
             repeat: Infinity,
-            ease: 'linear',
+            ease: "linear" as const,
           }}
           className="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] border border-white/5 rounded-full"
         />
@@ -54,7 +54,7 @@ export const ObeliaBanner = () => {
             transition={{
               duration: 4 + i * 0.5,
               repeat: Infinity,
-              ease: 'easeInOut',
+              ease: [0.42, 0, 0.58, 1],
               delay: i * 0.4,
             }}
           />
