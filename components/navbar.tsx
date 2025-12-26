@@ -19,25 +19,22 @@ const navItems = [
   {
     label: 'About',
     children: [
-      { href: '/about', label: 'Corporate Heritage', description: 'Our journey since 2016' },
-      { href: '/about/leadership', label: 'Leadership', description: 'Meet our visionary team' },
-      { href: '/about/team', label: 'Our Team', description: 'The people behind the innovation' },
-      { href: '/about/sustainability', label: 'Sustainability & Obelia', description: 'Carbon capture innovation' },
+      { href: '/about/green-story', label: 'Our Green Story', description: 'Discover our eco-friendly journey' },
+      { href: '/about/green-team', label: 'The Green Team', description: 'Meet the people driving sustainability' },
     ],
   },
-  {
-    label: 'Innovation',
-    children: [
-      { href: '/services', label: 'All Services', description: 'Our complete R&D portfolio' },
-      { href: '/services/food-beverage', label: 'Food & Beverage R&D', description: 'FMCG product engineering' },
-      { href: '/services/bio-cosmetics', label: 'Bio-Cosmetics', description: 'Natural beauty formulations' },
-      { href: '/services/bio-it', label: 'Bio-IT & Automation', description: 'AI & IoT in life sciences' },
-      { href: '/services/space-food', label: 'Space Nutrition', description: 'Frontier research' },
-    ],
-  },
-  { href: '/agro', label: 'Agro Division' },
+  { href: '/obelia', label: 'Obelia (Zaara Bio Architecture)' },
   { href: 'https://blitestore.com', label: 'B-Lite Store', external: true },
-  { href: '/school', label: 'Product School' },
+  {
+    label: 'Green Innovations',
+    children: [
+      { href: '/innovations/nutriment', label: 'Zaara Biotech Nutriment Private Limited', description: 'Nutrition innovation solutions' },
+      { href: '/innovations/bio-architecture', label: 'Zaara Biotech Bio-Architecture', description: 'Sustainable building technologies' },
+      { href: '/innovations/product-school', label: 'Zaara Product School', description: 'Education and training programs' },
+      { href: '/innovations/pro-chicken', label: 'Zaara PRO Chicken', description: 'Premium poultry solutions' },
+      { href: '/innovations/agro-division', label: 'Agro Division', description: 'Agricultural innovations' },
+    ],
+  },
 ];
 
 interface DropdownProps {
