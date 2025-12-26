@@ -19,8 +19,8 @@ const navItems = [
   {
     label: 'About',
     children: [
-      { href: '/about/green-story', label: 'Our Green Story', description: 'Discover our eco-friendly journey' },
-      { href: '/about/green-team', label: 'The Green Team', description: 'Meet the people driving sustainability' },
+      { href: '/green-story', label: 'Our Green Story', description: 'Discover our eco-friendly journey' },
+      { href: '/green-team', label: 'The Green Team', description: 'Meet the people driving sustainability' },
     ],
   },
   { href: '/obelia', label: 'Obelia (Zaara Bio Architecture)' },
