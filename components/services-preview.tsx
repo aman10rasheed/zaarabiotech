@@ -85,13 +85,13 @@ export const ServicesPreview = () => {
           return (
             <motion.div key={service.id} variants={cardVariants}>
               <Link href={`/services/${service.id}`}>
-                <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden bg-white hover:-translate-y-1">
+                <Card className="h-full pt-0 pb-4 border-0 shadow-lg hover:shadow-xl rounded-xl transition-all duration-300 group cursor-pointer overflow-hidden bg-white hover:-translate-y-1">
                   <div className="relative h-40 overflow-hidden">
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                     <div className="absolute bottom-4 left-4">
