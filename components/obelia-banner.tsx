@@ -71,11 +71,8 @@ export const ObeliaBanner = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium mb-6">
-              {obelia.subtitle}
-            </span>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-6 leading-tight">
               {obelia.name}:{' '}
               <span className="text-[#4ade80]">{obelia.tagline}</span>
             </h2>

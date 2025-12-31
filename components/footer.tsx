@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { 
-  Mail, MapPin, Phone, ArrowRight, 
+import {
+  Mail, MapPin, Phone, ArrowRight,
   Instagram, Linkedin, Twitter, Youtube,
   Globe
 } from 'lucide-react';
@@ -56,20 +56,17 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo.png"
                 alt="Zaara Biotech Logo"
-                width={180}
+                width={200}
                 height={60}
-                className="h-16 w-auto brightness-0 invert"
+                className="h-36 w-auto"
               />
             </Link>
             <p className="text-sm text-white/60 italic mb-4">&apos;feeding the nation forward&apos;</p>
-            <p className="text-white/70 mb-6 leading-relaxed max-w-md">
-              {companyInfo.description}
-            </p>
-            
+
             {/* Global Offices */}
             <div className="space-y-3 mb-6">
               <h4 className="font-semibold text-white flex items-center gap-2">
@@ -184,37 +181,20 @@ export const Footer = () => {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
-            
+
             {/* Contact Info */}
             <div className="mt-6 pt-6 border-t border-white/10 space-y-2">
               <div className="flex items-center gap-2 text-white/70 text-sm">
                 <Phone className="w-4 h-4 text-[#22c55e]" />
-                <span>+91 XXX XXX XXXX</span>
+                <span>+91 8137881103</span>
               </div>
               <div className="flex items-center gap-2 text-white/70 text-sm">
                 <Mail className="w-4 h-4 text-[#22c55e]" />
-                <span>info@zaarabiotech.com</span>
+                <span>research@zaarabiotech.com</span>
               </div>
             </div>
           </motion.div>
         </div>
-
-        {/* Partners Banner */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-16 pt-8 border-t border-white/10"
-        >
-          <p className="text-center text-white/50 text-sm mb-4">Trusted Partners & Collaborations</p>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {companyInfo.partners.map((partner, index) => (
-              <div key={index} className="text-white/40 hover:text-white/70 transition-colors text-sm font-medium">
-                {partner.name}
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
 
       {/* Bottom Bar */}

@@ -101,34 +101,15 @@ export const BliteShowcase = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 + index * 0.1 }}
             >
-              <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer hover:-translate-y-1">
                 <div className="relative aspect-square">
                   <Image
                     src={product.image}
                     alt={product.name}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-2 right-2 bg-white rounded-full px-2 py-1 text-xs font-bold text-[#166534]">
-                    ₹{product.price}
-                  </div>
                 </div>
-                <CardContent className="p-4">
-                  <h3 className="font-semibold text-sm text-[#1a1a1a] line-clamp-2 group-hover:text-[#166534] transition-colors">
-                    {product.name}
-                  </h3>
-                  <div className="flex gap-1 mt-2">
-                    {product.benefits.slice(0, 2).map((benefit, i) => (
-                      <span
-                        key={i}
-                        className="text-[10px] px-2 py-0.5 rounded-full bg-[#f0fdf4] text-[#166534]"
-                      >
-                        {benefit}
-                      </span>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+
             </motion.div>
           ))}
         </motion.div>

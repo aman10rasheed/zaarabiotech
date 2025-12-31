@@ -12,9 +12,9 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
-      <ServicesPreview />
-      <BliteShowcase />
       <ObeliaBanner />
+      <BliteShowcase />
+      <ServicesPreview />
       <CeoMessage />
       <PartnersSection />
       <Footer />

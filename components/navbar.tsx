@@ -23,7 +23,7 @@ const navItems = [
       { href: '/green-team', label: 'The Green Team', description: 'Meet the people driving sustainability' },
     ],
   },
-  { href: '/obelia', label: 'Obelia (Zaara Bio Architecture)' },
+  { href: '/obelia', label: 'Obelia' },
   { href: 'https://blitestore.com', label: 'B-Lite Store', external: true },
   {
     label: 'Green Innovations',
