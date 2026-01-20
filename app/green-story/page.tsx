@@ -7,7 +7,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { SectionWrapper } from '@/components/section-wrapper';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Leaf, TreeDeciduous, Droplets, Sun, Wind, Recycle } from 'lucide-react';
+import { ArrowRight, Leaf, TreeDeciduous, Droplets, Sun, Wind, Recycle, Eye, Target } from 'lucide-react';
 
 const greenInitiatives = [
     {
@@ -103,7 +103,7 @@ export default function GreenStoryPage() {
                             Our Green Story
                         </span>
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1a1a1a] mb-6">
-                            Engineering a{' '}
+                            The Journey to shape a{' '}
                             <span className="text-[#166534]">Sustainable Future</span>
                         </h1>
                         <p className="text-xl text-gray-600 leading-relaxed">
@@ -124,7 +124,7 @@ export default function GreenStoryPage() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl sm:text-4xl font-bold text-[#1a1a1a] mb-6">
-                            The Heart of Our Green Journey
+                            Our Green Journey
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed mb-6">
                             From a college project to a global biotechnology leader, Zaara Biotech has always
@@ -176,44 +176,53 @@ export default function GreenStoryPage() {
                 </div>
             </SectionWrapper>
 
-            {/* Green Initiatives Grid */}
+            {/* Mission & Vision */}
             <SectionWrapper background="mint">
-                <div className="text-center mb-12">
-                    <motion.span
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    {/* Vision Card */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="inline-block px-4 py-2 rounded-full bg-white text-[#166534] text-sm font-medium mb-4"
+                        className="bg-[#166534] rounded-3xl p-8 md:p-12 relative overflow-hidden text-white shadow-xl group hover:shadow-2xl transition-all duration-300"
                     >
-                        Our Initiatives
-                    </motion.span>
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-3xl sm:text-4xl font-bold text-[#1a1a1a]"
-                    >
-                        Pillars of Sustainability
-                    </motion.h2>
-                </div>
-
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {greenInitiatives.map((initiative, index) => (
-                        <motion.div
-                            key={initiative.title}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow"
-                        >
-                            <div className="w-14 h-14 rounded-xl bg-[#dcfce7] flex items-center justify-center mb-4">
-                                <initiative.icon className="w-7 h-7 text-[#166534]" />
+                        <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                            <Eye className="w-32 h-32" />
+                        </div>
+                        <div className="relative z-10">
+                            <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-6 backdrop-blur-sm">
+                                <Eye className="w-7 h-7 text-white" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#1a1a1a] mb-2">{initiative.title}</h3>
-                            <p className="text-gray-600">{initiative.description}</p>
-                        </motion.div>
-                    ))}
+                            <h2 className="text-3xl font-bold mb-6 tracking-tight">OUR VISION</h2>
+                            <p className="text-lg leading-relaxed text-white/90 font-medium">
+                                Enriching lives globally through access to nutritious sustenance and pristine environments,
+                                enhancing lives worldwide and a sustainable future for generations to come.
+                            </p>
+                        </div>
+                    </motion.div>
+
+                    {/* Mission Card */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="bg-[#166534] rounded-3xl p-8 md:p-12 relative overflow-hidden text-white shadow-xl group hover:shadow-2xl transition-all duration-300"
+                    >
+                        <div className="absolute -bottom-4 -right-4 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                            <Target className="w-40 h-40" />
+                        </div>
+                        <div className="relative z-10">
+                            <div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-6 backdrop-blur-sm">
+                                <Target className="w-7 h-7 text-white" />
+                            </div>
+                            <h2 className="text-3xl font-bold mb-6 tracking-tight">OUR MISSION</h2>
+                            <p className="text-lg leading-relaxed text-white/90 font-medium">
+                                Our mission is to create, produce, and distribute exceptional, health-enhancing products while
+                                pioneering cutting-edge environmental solutions, enriching lives with unparalleled quality and sustainability.
+                            </p>
+                        </div>
+                    </motion.div>
                 </div>
             </SectionWrapper>
 

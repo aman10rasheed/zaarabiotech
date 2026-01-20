@@ -58,7 +58,7 @@ export const Footer = () => {
           >
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src="/logowhite.png"
                 alt="Zaara Biotech Logo"
                 width={200}
                 height={60}
