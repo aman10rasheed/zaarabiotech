@@ -51,7 +51,7 @@ const projects = [
 
 export const ObeliaProjects = () => {
     return (
-        <section className="py-24 bg-[#0c4a6e] relative overflow-hidden">
+        <section className="py-14 bg-[#0c4a6e] relative overflow-hidden">
             {/* Background Decor */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#22c55e]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#166534]/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />

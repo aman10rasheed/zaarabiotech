@@ -54,8 +54,8 @@ const products = [
 
 export const ObeliaProducts = () => {
     return (
-        <section className="py-24 bg-white">
-            <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-14 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Circular Economy Splash */}
                 <div className="mb-32">

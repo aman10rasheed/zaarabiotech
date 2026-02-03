@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const ObeliaIntro = () => {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-14 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 
