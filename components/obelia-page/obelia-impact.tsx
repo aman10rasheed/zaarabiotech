@@ -59,7 +59,7 @@ export const ObeliaImpact = () => {
                         className="relative h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-2xl"
                     >
                         <Image
-                            src="/a_6-Photo-scaled.jpg"
+                            src="/obelia/OB2.jpg"
                             alt="Impact of CO2 on business"
                             fill
                             className="object-cover"

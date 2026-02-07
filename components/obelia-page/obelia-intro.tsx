@@ -25,10 +25,6 @@ export const ObeliaIntro = () => {
                             Picture a world where carbon dioxide isn&apos;t a lingering threat in our atmosphere but a
                             resource transformed into valuable biomass, driving a sustainable tomorrow.
                         </p>
-                        <p className="text-lg text-gray-700 leading-relaxed font-semibold">
-                            Welcome to the groundbreaking vision of ZAARA BIOTECH, where our innovative
-                            bioreactor marks the beginning of this transformative journey.
-                        </p>
                     </motion.div>
 
                     <motion.div
@@ -39,7 +35,7 @@ export const ObeliaIntro = () => {
                         className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[#f0fdf4] to-[#dcfce7] flex items-center justify-center border border-[#166534]/10"
                     >
                         {/* Placeholder for an evocative image or abstract graphic */}
-                        <div className="absolute inset-0 bg-[url('/image002.jpeg')] bg-cover bg-center opacity-80 hover:scale-105 transition-transform duration-700" />
+                        <div className="absolute inset-0 bg-[url('/obelia/OB1.PNG')] bg-cover bg-center opacity-80 hover:scale-105 transition-transform duration-700" />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0c4a6e]/80 to-transparent" />
                         <div className="absolute bottom-8 left-8 right-8">
                             <div className="text-white text-3xl font-bold mb-2">ZAARA BIOTECH</div>

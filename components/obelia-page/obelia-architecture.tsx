@@ -12,14 +12,14 @@ const carouselImages = [
 
 const features = [
     {
-        icon: Gauge,
-        title: "AQI Monitoring",
-        description: "Real-time Air Quality Index monitoring providing actionable data."
-    },
-    {
         icon: Leaf,
         title: "Carbon Offset",
         description: "Track carbon offsetting capabilities transparently and accurately."
+    },
+    {
+        icon: Gauge,
+        title: "AQI Monitoring",
+        description: "Real-time Air Quality Index monitoring providing actionable data."
     },
     {
         icon: Activity,
@@ -40,7 +40,7 @@ export const ObeliaArchitecture = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold text-[#0c4a6e] mb-6"
                     >
-                        Obelia- Bio Architecture Carbon Offset Platform
+                        Obelia, An Urban Algae Project
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}

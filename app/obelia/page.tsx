@@ -16,10 +16,10 @@ export default function ObeliaPage() {
         <main className="min-h-screen bg-white">
             <Navbar />
             <ObeliaHero />
-            <ObeliaIntro />
             <ObeliaArchitecture />
-            <ObeliaImpact />
             <ObeliaFeatures />
+            <ObeliaIntro />
+            <ObeliaImpact />
             <ObeliaProducts />
             <ObeliaVideos />
             <ObeliaProjects />

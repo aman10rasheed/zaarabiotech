@@ -64,7 +64,7 @@ export const ObeliaProjects = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Projects</h2>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Success Stories</h2>
                         <p className="text-[#4ade80] text-lg">Deploying sustainability across the globe</p>
                     </motion.div>
 

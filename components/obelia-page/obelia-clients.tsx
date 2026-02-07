@@ -17,7 +17,7 @@ const clients = [
 
 export const ObeliaClients = () => {
     return (
-        <section className="py-14 bg-[#f8fafc] overflow-hidden">
+        <section className="py-14 bg-[#ffffff] overflow-hidden">
             <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#0c4a6e]">Our Trusted Partners</h2>
             </div>
@@ -26,7 +26,7 @@ export const ObeliaClients = () => {
                 <div className="flex gap-12 md:gap-24 animate-carousel whitespace-nowrap py-4">
                     {/* First loop */}
                     {clients.map((logo, index) => (
-                        <div key={`l1-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 mix-blend-multiply">
+                        <div key={`l1-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 transition-all duration-300  mix-blend-multiply">
                             <Image
                                 src={`/clients/${logo}`}
                                 alt="Client Logo"
@@ -37,7 +37,7 @@ export const ObeliaClients = () => {
                     ))}
                     {/* Second loop for smooth infinite scroll */}
                     {clients.map((logo, index) => (
-                        <div key={`l2-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 mix-blend-multiply">
+                        <div key={`l2-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 transition-all duration-300  mix-blend-multiply">
                             <Image
                                 src={`/clients/${logo}`}
                                 alt="Client Logo"
@@ -48,7 +48,7 @@ export const ObeliaClients = () => {
                     ))}
                     {/* Third loop for extra smoothness on wide screens */}
                     {clients.map((logo, index) => (
-                        <div key={`l3-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100 mix-blend-multiply">
+                        <div key={`l3-${index}`} className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 transition-all duration-300  mix-blend-multiply">
                             <Image
                                 src={`/clients/${logo}`}
                                 alt="Client Logo"
