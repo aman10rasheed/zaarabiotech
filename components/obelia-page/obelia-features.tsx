@@ -1,135 +1,148 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Fingerprint, Leaf, Palette, Recycle, Smile, Wrench } from 'lucide-react';
-import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
+import {
+    Leaf,
+    Target,
+    TrendingUp,
+    Smile,
+    Recycle,
+    Palette,
+    Award,
+    FileText
+} from 'lucide-react';
 
 const features = [
     {
         icon: Leaf,
-        title: "Reducing Carbon Footprint",
-        description: "Obelia uses algae-based bioreactors integrated into architectural structures to actively capture CO₂ and air pollutants. Through photosynthesis, the algae convert carbon dioxide into oxygen and biomass. The captured carbon is then transformed into value-added products, creating a closed-loop carbon cycle.",
-        image: "/image001.jpeg"
+        title: "Efficient Carbon Absorption",
+        description: "Using microalgae, Obelia captures carbon dioxide in the presence of sunlight and releases oxygen, enabling natural, on-site carbon capture.",
+        color: "bg-emerald-100 text-emerald-600"
+    },
+    {
+        icon: Target,
+        title: "Support for Carbon Neutrality Goals",
+        description: "Continuous CO₂ capture helps organizations lower their operational carbon footprint and progress toward carbon neutrality and net-zero commitments.",
+        color: "bg-blue-100 text-blue-600"
+    },
+    {
+        icon: TrendingUp,
+        title: "Enable ESG & CSR Impact",
+        description: "Obelia supports Environmental, Social, and Governance goals by delivering measurable carbon capture, improving employee wellbeing, and verified data for reporting.",
+        color: "bg-indigo-100 text-indigo-600"
     },
     {
         icon: Smile,
         title: "Mental Wellbeing",
-        description: "Obelia’s bio-architecture systems continuously purify indoor air through algae-based bioreactors, enriching environments with oxygen and natural aesthetics. This improves air quality, cognitive function, and mood, creating healthier, more uplifting spaces that support mental well-being and productivity.",
+        description: "Obelia improves indoor air quality, helping reduce issues linked to Sick Building Syndrome such as headaches, fatigue, and poor concentration.",
+        color: "bg-rose-100 text-rose-600"
     },
     {
         icon: Recycle,
         title: "Resource Recovery",
-        description: "Direct carbon offsetting captures atmospheric CO₂ via photosynthesis, converting it into biomass. This biomass is utilized in Zaara’s value-added products like functional foods and bio-based materials, creating indirect carbon offsetting through sustainable production cycles.",
+        description: "Carbon captured by Obelia is converted into valuable biomass, which is repurposed for products such as Spirulina-based cookies and poultry feed.",
+        color: "bg-amber-100 text-amber-600"
     },
     {
         icon: Palette,
-        title: "Customized Designs & Aesthetic Integration",
-        description: "Obelia systems are modular and customizable, designed to seamlessly blend biotechnology with modern architecture. Each unit can be tailored in form, scale, and finish to complement its environment—whether integrated into interiors, façades, public furniture, or green billboards.",
+        title: "Customized Design & Aesthetic Integration",
+        description: "Multiple Obelia models are tailored to match the aesthetics of each space, ensuring seamless integration into interiors, façades, and public areas.",
+        color: "bg-violet-100 text-violet-600"
     },
     {
-        icon: Wrench,
-        title: "Ease of Maintenance",
-        description: "Engineered for low-maintenance operation with automated monitoring and modular components. Each bioreactor runs in 45–60 day growth cycles, after which algae are harvested. The integrated IoT dashboard alerts users to system status.",
+        icon: Award,
+        title: "Support for Green Building Certification",
+        description: "Obelia contributes to green building standards by improving indoor environmental quality and reducing carbon emissions.",
+        color: "bg-teal-100 text-teal-600"
     },
     {
-        icon: Fingerprint,
-        title: "Personalised Projects",
-        description: "Every Obelia project is developed through a data-driven Environmental Impact Assessment (EIA). We design custom mitigation strategies and deploy tailored Obelia systems to maximize carbon capture and ecological benefits.",
-    },
-    {
-        icon: Fingerprint,
-        title: "Personalised Projects",
-        description: "Every Obelia project is developed through a data-driven Environmental Impact Assessment (EIA). We design custom mitigation strategies and deploy tailored Obelia systems to maximize carbon capture and ecological benefits.",
+        icon: FileText,
+        title: "Personalized, Data-Driven Projects",
+        description: "Each installation is based on an Environmental Impact Study to assess CO₂ levels, identify optimal placement, and determine the right volume.",
+        color: "bg-cyan-100 text-cyan-600"
     }
 ];
 
+const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.5,
+            ease: "easeOut"
+        }
+    }
+};
+
 export const ObeliaFeatures = () => {
     return (
-        <section className="py-14 bg-[#f8fafc] overflow-hidden">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 relative overflow-hidden bg-gradient-to-b from-slate-50 to-white">
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div className="absolute -top-[20%] -right-[10%] w-[600px] h-[600px] rounded-full bg-blue-100/40 blur-3xl" />
+                <div className="absolute top-[40%] -left-[10%] w-[500px] h-[500px] rounded-full bg-emerald-100/40 blur-3xl" />
+                <div className="absolute -bottom-[10%] right-[20%] w-[400px] h-[400px] rounded-full bg-indigo-100/30 blur-3xl" />
+            </div>
 
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#0c4a6e] mb-6">
-                        Why Your Space Needs OBS
+                    <span className="inline-block py-1 px-3 rounded-full bg-sky-100 text-sky-700 text-sm font-semibold tracking-wide mb-4">
+                        WHY OBELIA?
+                    </span>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
+                        Why Your Space Needs <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">OBELIA</span>
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Experience the synergy of nature and technology.
+                    <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                        Transforming environments with the power of nature and technology combined.
                     </p>
                 </motion.div>
 
-                <div>
-                    {features
-                        .filter(f => f.image === '/image001.jpeg')
-                        .map((feature, index) => (
-                            <MainFeature key={`main-${index}`} feature={feature} />
-                        ))}
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8"
+                >
+                    {features.map((feature, index) => (
+                        <motion.div
+                            key={index}
+                            variants={itemVariants}
+                            whileHover={{ y: -5, transition: { duration: 0.2 } }}
+                            className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] transition-all group h-full flex flex-col"
+                        >
+                            <div className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
+                                <feature.icon size={28} strokeWidth={1.5} />
+                            </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {features
-                            .filter(f => f.image !== '/image001.jpeg')
-                            .map((feature, index) => (
-                                <GridFeature key={`grid-${index}`} feature={feature} index={index} />
-                            ))}
-                    </div>
-                </div>
+                            <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-sky-700 transition-colors">
+                                {feature.title}
+                            </h3>
 
+                            <p className="text-slate-600 leading-relaxed text-sm flex-grow">
+                                {feature.description}
+                            </p>
+                        </motion.div>
+                    ))}
+                </motion.div>
             </div>
         </section>
     );
 };
-
-const MainFeature = ({ feature }: { feature: any }) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-24"
-    >
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <div className="flex-1 space-y-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#dcfce7] text-[#166534] mb-4">
-                    <feature.icon size={32} />
-                </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-[#1a1a1a]">{feature.title}</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                    {feature.description}
-                </p>
-                <div className="w-20 h-1 bg-gradient-to-r from-[#166534] to-[#22c55e] rounded-full mt-8" />
-            </div>
-            <div className="flex-1 w-full">
-                <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-                    <Image
-                        src={feature.image}
-                        alt={feature.title}
-                        fill
-                        className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0c4a6e]/40 to-transparent" />
-                </div>
-            </div>
-        </div>
-    </motion.div>
-);
-
-const GridFeature = ({ feature, index }: { feature: any, index: number }) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: index * 0.1 }}
-        className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all text-center group"
-    >
-        <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-[#f0fdf4] text-[#166534] mb-6 group-hover:scale-110 transition-transform">
-            <feature.icon size={28} />
-        </div>
-        <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">{feature.title}</h3>
-        <p className="text-gray-600 leading-relaxed text-sm">
-            {feature.description}
-        </p>
-    </motion.div>
-);

@@ -108,7 +108,7 @@ export const Navbar = () => {
               alt="Zaara Biotech Logo"
               width={300}
               height={80}
-              className="h-12 sm:h-14 md:h-16 lg:h-30 w-auto"
+              className="h-10 sm:h-12 md:h-14 w-auto"
               priority
             />
           </Link>

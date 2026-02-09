@@ -62,7 +62,7 @@ export const Footer = () => {
                 alt="Zaara Biotech Logo"
                 width={200}
                 height={60}
-                className="h-36 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="text-sm text-white/60 italic mb-4">&apos;feeding the nation forward&apos;</p>
