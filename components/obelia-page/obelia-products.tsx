@@ -7,7 +7,7 @@ import Image from 'next/image';
 const data = [
     {
         title: "Circular Economy",
-        description: "Obelia: Closing the Loop. Ambient air is drawn in, microalgae absorb CO2, and biomass is harvested to create value-added products like Blite Cookies and poultry feed.",
+        description: "Obelia closes the loop by drawing in ambient air and channeling it into the algae chamber. There, the algae grow by absorbing CO₂ from the air. The entire system is continuously monitored through IoT technology to ensure it operates at peak efficiency. Once the algae reach optimal growth, the biomass is harvested and transferred to our laboratory for quality assurance. After verification, the biomass is repurposed into valuable products such as B-Lite cookies and Zara Pro poultry feed.",
         image: "/image003.jpeg",
         tags: ["Sustainability", "Food Security", "Zero Waste"]
     },
@@ -55,11 +55,11 @@ const products = [
 export const ObeliaProducts = () => {
     return (
         <section className="py-14 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Circular Economy Splash */}
-                <div className="mb-32">
-                    <div className="bg-[#0c4a6e] rounded-3xl overflow-hidden shadow-2xl grid lg:grid-cols-2">
+                <div className="mb-12">
+                    <div className="bg-[#0c4a6e] rounded-3xl overflow-hidden shadow-2xl grid lg:grid-cols-[60%_40%]">
                         <div className="p-10 md:p-16 flex flex-col justify-center text-white">
                             <h2 className="text-3xl md:text-5xl font-bold mb-6">The Keystone of our <span className="text-[#4ade80]">Circular Economy</span></h2>
                             <p className="text-lg text-gray-300 leading-relaxed mb-8">
@@ -73,13 +73,13 @@ export const ObeliaProducts = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="relative h-full">
+                        <div className="relative h-full flex items-center justify-center">
                             <Image
                                 src={data[0].image}
                                 alt="Circular Economy"
                                 width={1024}
-                                height={1600}
-                                className="w-full h-full object-cover lg:object-contain bg-[#0c4a6e]"
+                                height={1700}
+                                className="w-full h-full object-contain"
                             />
                         </div>
                     </div>
@@ -102,7 +102,7 @@ export const ObeliaProducts = () => {
                             className="group bg-[#f0fdf4] rounded-2xl p-8 border border-[#dcfce7] hover:bg-white hover:shadow-xl transition-all duration-300"
                         >
                             <div className="flex items-start justify-between mb-6">
-                                <div className="w-12 h-12 rounded-xl bg-[#166534] flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                                <div className="relative h-full px-8 py-4 lg:px-12 lg:py-4 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                                     <product.icon size={24} />
                                 </div>
                                 <span className="px-3 py-1 rounded-full bg-[#166534]/10 text-[#166534] text-xs font-bold uppercase tracking-wider">
