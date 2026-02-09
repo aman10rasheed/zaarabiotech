@@ -10,42 +10,42 @@ const projects = [
         location: "Infopark, Kochi, India",
         type: "Outdoor",
         desc: "300L capacity Photobooth deployed in the public interaction zone of Infopark.",
-        image: "/1.png"
+        image: "obelia/1.png"
     },
     {
         title: "Obelia Corner Seating",
         location: "Kerala State Disaster Management, Trivandrum, India",
         type: "Indoor",
         desc: "200L capacity corner seating deployed in the Directors office of KSDMA.",
-        image: "/6.png"
+        image: "obelia/6.png"
     },
     {
         title: "Obelia Living Seat",
         location: "Kerala Startup Mission, Kochi, India",
         type: "Outdoor",
         desc: "300L capacity Outdoor seating deployed in the food court zone of the campus.",
-        image: "/3.png"
+        image: "obelia/3.png"
     },
     {
         title: "Obelia Brand Pod",
         location: "Allianz Office, Embassy Tower, India",
         type: "Indoor",
         desc: "100L capacity indoor standalone unit deployed in the meeting lobby of the office.",
-        image: "/5.png"
+        image: "obelia/5.png"
     },
     {
         title: "Obelia Reception Desk",
         location: "Kerala State Disaster Management, Trivandrum, India",
         type: "Indoor",
         desc: "300L capacity reception desk deployed in the front office of KSDMA.",
-        image: "/4.png"
+        image: "obelia/4.png"
     },
     {
         title: "Obelia Algaport (Portable)",
         location: "Park Center, Technopark, India",
         type: "Indoor",
         desc: "30L capacity portable units deployed in multiple conference halls and office in Park Center building.",
-        image: "/04.jpeg"
+        image: "obelia/04.jpeg"
     }
 ];
 
