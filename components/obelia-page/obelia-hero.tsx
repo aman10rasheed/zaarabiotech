@@ -71,7 +71,7 @@ export const ObeliaHero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-6 leading-tight">
-                        Harnessing the Power of Algae for a Greener Future
+                        Obelia, An Urban Algae Project. Designed For Space, Engineered For Air.
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
                         Revolutionizing Carbon Capture and Redefining Sustainability

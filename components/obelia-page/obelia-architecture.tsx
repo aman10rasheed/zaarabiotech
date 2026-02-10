@@ -5,9 +5,17 @@ import { Activity, Leaf, Gauge } from 'lucide-react';
 import Image from 'next/image';
 
 const carouselImages = [
+    "/obelia/4.png",
+    "/obelia/04.jpeg",
+    "/obelia/5.png",
+    "/obelia/3.png",
     "/Obelia- Bio.jpeg",
     "/Obelia- Bio2.jpeg",
     "/Obelia- Bio3.jpg",
+    "/obelia/4.png",
+    "/obelia/04.jpeg",
+    "/obelia/5.png",
+    "/obelia/3.png",
 ];
 
 const features = [
@@ -87,25 +95,25 @@ export const ObeliaArchitecture = () => {
                                 the algae are harvested and the nutrient media replenished for continuous operation.
                             </p>
                         </div>
-                        <div className="relative h-[300px] lg:h-[400px] bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm overflow-hidden flex items-center">
+                        <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden flex items-center">
                             <div className="absolute inset-0 flex items-center">
                                 <motion.div
-                                    className="flex gap-4 px-4"
+                                    className="flex gap-4"
                                     animate={{ x: ["0%", "-50%"] }}
                                     transition={{
-                                        duration: 20,
+                                        duration: 30,
                                         repeat: Infinity,
                                         ease: "linear"
                                     }}
                                     style={{ width: "max-content" }}
                                 >
-                                    {[...carouselImages, ...carouselImages, ...carouselImages, ...carouselImages].map((src, index) => (
-                                        <div key={index} className="relative w-[280px] h-[200px] md:w-[350px] md:h-[250px] flex-shrink-0 rounded-xl overflow-hidden border border-white/20 shadow-lg">
+                                    {[...carouselImages, ...carouselImages].map((src, index) => (
+                                        <div key={index} className="relative w-[300px] h-[220px] md:w-[400px] md:h-[300px] flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                                             <Image
                                                 src={src}
                                                 alt={`Obelia Installation ${index}`}
                                                 fill
-                                                className="object-cover hover:scale-110 transition-transform duration-700"
+                                                className="object-cover"
                                             />
                                         </div>
                                     ))}
