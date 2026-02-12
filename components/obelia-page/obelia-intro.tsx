@@ -14,7 +14,7 @@ export const ObeliaIntro = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#0c4a6e] mb-6">
+                        <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-6">
                             Can CO2 Be Gold?
                         </h2>
                         <h3 className="text-xl md:text-2xl text-[#166534] mb-6 font-medium">

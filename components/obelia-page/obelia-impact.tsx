@@ -44,7 +44,7 @@ export const ObeliaImpact = () => {
                             <AlertTriangle size={16} />
                             The Silent Threat
                         </span>
-                        <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] mb-6">
+                        <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-6">
                             How CO2 Hurts Your Business
                         </h2>
                         <p className="text-gray-600 text-sm md:text-lg leading-relaxed">

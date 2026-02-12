@@ -66,7 +66,7 @@ export const ObeliaFAQ = () => {
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#0c4a6e] mb-4">Frequently Asked Questions</h2>
+                    <h2 className="text-2xl md:text-5xl pb-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-2">Frequently Asked Questions</h2>
                     <p className="text-sm md:text-lg text-gray-600">Everything you need to know about OBELIA</p>
                 </div>
 

@@ -46,7 +46,7 @@ export const ObeliaArchitecture = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-[#0c4a6e] mb-6"
+                        className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] pb-4 to-[#166534] mb-3"
                     >
                         The Urban Algae Project
                     </motion.h2>

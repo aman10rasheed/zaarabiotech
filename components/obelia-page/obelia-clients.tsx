@@ -21,7 +21,7 @@ export const ObeliaClients = () => {
     return (
         <section className="py-14 bg-[#ffffff] overflow-hidden">
             <div className="text-center mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#0c4a6e]">Our Trusted Partners</h2>
+                <h2 className="text-2xl md:text-5xl pb-4 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534]">Our Trusted Partners</h2>
             </div>
 
             <div className="relative flex overflow-hidden">

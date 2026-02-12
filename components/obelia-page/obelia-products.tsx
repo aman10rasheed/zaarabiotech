@@ -93,7 +93,7 @@ export const ObeliaProducts = () => {
 
                 {/* Product Grid */}
                 <div className="text-center mb-16">
-                    <h2 className="text-2xl md:text-5xl font-bold text-[#1a1a1a] mb-6">Our Standard Design Profile</h2>
+                    <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] pb-4 mb-6">Our Standard Design Profile</h2>
                     <p className="text-sm md:text-lg text-gray-600">Innovative solutions for every space</p>
                 </div>
 

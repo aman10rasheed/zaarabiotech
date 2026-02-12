@@ -28,7 +28,7 @@ export const ObeliaVideos = () => {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold text-[#0c4a6e] mb-4">See Obelia in Action</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-4">See <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">OBELIA</span>  in Action</h2>
                     <p className="text-gray-600">Transforming spaces across the world</p>
                 </motion.div>
 

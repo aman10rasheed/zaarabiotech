@@ -103,7 +103,7 @@ export const ObeliaFeatures = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-2xl md:text-6xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
+                    <h2 className="text-2xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] mb-6 tracking-tight">
                         Why Your Space Needs <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">OBELIA</span>
                     </h2>
                     <p className="text-sm md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
