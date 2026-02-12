@@ -238,7 +238,7 @@ export default function ProductSchoolPage() {
                                     Apply Now <ArrowRight className="ml-2 w-5 h-5" />
                                 </Link>
                             </Button>
-                            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10 rounded-xl">
+                            <Button asChild variant="outline" size="lg" className="border-2 border-white text-[#7c3aed] hover:bg-white rounded-xl">
                                 <Link href="/contact">
                                     Request Brochure
                                 </Link>

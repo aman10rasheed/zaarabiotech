@@ -5,14 +5,16 @@ import Image from 'next/image';
 
 const clients = [
     "10-1-150x150.png",
-    "2-1-150x150.png",
     "3-2-150x150.png",
-    "4-2-150x150.png",
     "5-2-150x150.png",
     "6-2-150x150.png",
     "7-1-150x150.png",
     "8-1-150x150.png",
-    "9-1-150x150.png"
+    "9-1-150x150.png",
+    "Zero Degree logo.jpg",
+    "kochimetrorail.png",
+    "ksdma logo.jpg",
+    "ulccs_logo.jpg"
 ];
 
 export const ObeliaClients = () => {

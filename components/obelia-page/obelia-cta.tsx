@@ -13,9 +13,9 @@ export const ObeliaCTA = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-6xl font-bold text-[#0c4a6e] mb-8 leading-tight"
+                    className="text-xl md:text-5xl font-bold text-[#0c4a6e] mb-8 leading-tight"
                 >
-                    Join The <span className="text-[#166534]">Algae Revolution</span>
+                    Jont The <span className="text-[#166534]">ALGAE REVOLUTION</span>
                 </motion.h2>
 
                 <motion.p
@@ -23,10 +23,10 @@ export const ObeliaCTA = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="text-xl text-gray-600 mb-10 leading-relaxed"
+                    className="text-sm md:text-xl text-gray-600 mb-10 leading-relaxed uppercase"
                 >
-                    Embrace the power of nature&apos;s unsung heroes. Choose Obelia and be a part of the solution,
-                    one liquid tree at a time. Breathe easy knowing you&apos;re making a difference for our planet.
+                    EMBRACE THE POWER OF NATURE&apos;S UNSUNG HEROES. CHOOSE OBELIA AND BE A PART OF THE SOLUTION,
+                    ONE LIQUID TREE AT A TIME. BREATHE EASY KNOWING YOU&apos;RE MAKING A DIFFERENCE FOR OUR PLANET.
                 </motion.p>
 
                 <motion.div
@@ -35,9 +35,9 @@ export const ObeliaCTA = () => {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                 >
-                    <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-10 py-8 text-xl shadow-xl shadow-[#166534]/20 group">
+                    <Button asChild size="lg" className="bg-[#166534] hover:bg-[#14532d] text-white rounded-full px-10 py-8 text-sm md:text-xl shadow-xl shadow-[#166534]/20 group uppercase">
                         <Link href="/contact">
-                            Get Started Now
+                            GET STARTED NOW
                             <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </Button>

@@ -103,15 +103,11 @@ export const ObeliaFeatures = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-sky-100 text-sky-700 text-sm font-semibold tracking-wide mb-4">
-                        WHY OBELIA?
-                    </span>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
+                    <h2 className="text-2xl md:text-4xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
                         Why Your Space Needs <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">OBELIA</span>
                     </h2>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                        Transforming environments with the power of nature and technology combined.
-                    </p>
+                    <p className="text-sm md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                        Transforming environment with the power of nature and technology                     </p>
                 </motion.div>
 
                 <motion.div

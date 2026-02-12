@@ -66,24 +66,8 @@ export const ObeliaProjects = () => {
                         className="max-w-3xl"
                     >
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                            Obelia, An Urban Algae Project. <br className="hidden md:block" />
-                            Designed For Space, <span className="text-[#4ade80]">Engineered For Air.</span>
+                            Our Success Stories
                         </h2>
-                        <p className="text-[#4ade80] text-xl font-medium mb-8">Exciting one approved</p>
-
-                        {/* Circular Economy Section */}
-                        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 mt-8">
-                            <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                                <span className="p-2 bg-[#22c55e]/20 rounded-lg text-[#4ade80]">
-                                    {/* Using a Recycle icon or similar if Loop isn't available, but lucide has Recycle/RefreshCw */}
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-recycle"><path d="M7 19H4.815a1.8 1.8 0 0 1-1.432-.712L1.033 14.536a3.6.8 0 0 1 0-3.072l2.35-3.752A1.8 1.8 0 0 1 4.816 7H7" /><path d="M17 19h2.185a1.8 1.8 0 0 0 1.432-.712l2.35-3.752a3.6 3.6 0 0 0 0-3.072l-2.35-3.752A1.8 1.8 0 0 0 19.184 7H17" /><path d="M10 22a2 2 0 1 0 4 0 2 2 0 1 0-4 0" /><path d="M10 2a2 2 0 1 0 4 0 2 2 0 1 0-4 0" /><path d="M7 17l3 5 3-5" /><path d="M17 17l-3 5-3-5" /><path d="M7 7l3-5 3 5" /><path d="M17 7l-3-5-3-5" /></svg>
-                                </span>
-                                Circular Economy
-                            </h3>
-                            <p className="text-white/80 leading-relaxed">
-                                Obelia closes the loop by drawing in ambient air and channeling it into the algae chamber. There, the algae grow by absorbing CO₂ from the air. The entire system is continuously monitored through IoT technology to ensure it operates at peak efficiency. Once the algae reach optimal growth, the biomass is harvested and transferred to our laboratory for quality assurance. After verification, the biomass is repurposed into valuable products such as B-Lite cookies and Zara Pro poultry feed.
-                            </p>
-                        </div>
                     </motion.div>
 
                     <motion.div
@@ -117,12 +101,12 @@ export const ObeliaProjects = () => {
                             transition={{ delay: index * 0.1 }}
                             className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:bg-white/10 transition-colors h-full flex flex-col"
                         >
-                            <div className="aspect-[4/3] relative overflow-hidden">
+                            <div className="aspect-[4/5] relative overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c4a6e] to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 

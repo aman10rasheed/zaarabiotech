@@ -44,10 +44,10 @@ export const ObeliaImpact = () => {
                             <AlertTriangle size={16} />
                             The Silent Threat
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
+                        <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a1a] mb-6">
                             How CO2 Hurts Your Business
                         </h2>
-                        <p className="text-gray-600 text-lg leading-relaxed">
+                        <p className="text-gray-600 text-sm md:text-lg leading-relaxed">
                             Carbon emissions aren&apos;t just an environmental statistic—they are an operational risk impacting health, productivity, and profitability.
                         </p>
                     </motion.div>

@@ -294,7 +294,7 @@ export default function ProChickenPage() {
                                     Order Now <ArrowRight className="ml-2 w-5 h-5" />
                                 </Link>
                             </Button>
-                            <Button asChild variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white/10 rounded-xl">
+                            <Button asChild variant="outline" size="lg" className="border-2 border-white text-[#f59e0b] hover:bg-white rounded-xl">
                                 <Link href="/contact">
                                     Become a Partner
                                 </Link>

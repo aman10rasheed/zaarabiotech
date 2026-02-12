@@ -48,7 +48,7 @@ export const ObeliaArchitecture = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold text-[#0c4a6e] mb-6"
                     >
-                        Obelia, An Urban Algae Project
+                        The Urban Algae Project
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -82,21 +82,21 @@ export const ObeliaArchitecture = () => {
                 </div>
 
                 <div className="bg-[#0c4a6e] rounded-3xl p-8 md:p-16 text-white overflow-hidden relative">
-                    <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h3 className="text-3xl font-bold mb-6 text-[#4ade80]">Core Technology</h3>
-                            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                    <div className="relative z-10 flex flex-col gap-6">
+                        <div className="max-w-4xl mx-auto">
+                            <h3 className="text-3xl md:text-5xl font-bold mb-6 text-[#4ade80]">Core Technology</h3>
+                            <p className="text-md md:text-lg text-gray-300 mb-6 leading-relaxed">
                                 At its core, Obelia integrates an algae-based bioreactor powered by a precision pressure motor
                                 that draws in ambient air. Through photosynthesis, the microalgae capture CO₂ and airborne
                                 pollutants, converting them into biomass rich in proteins and Omega-3s.
                             </p>
-                            <p className="text-lg text-gray-300 leading-relaxed">
+                            <p className="text-md md:text-lg text-gray-300 leading-relaxed">
                                 Operating in 45–60 day cycles, the system is frequently maintained with automated checks where
                                 the algae are harvested and the nutrient media replenished for continuous operation.
                             </p>
                         </div>
                         <div className="relative h-[300px] lg:h-[400px] w-full overflow-hidden flex items-center">
-                            <div className="absolute inset-0 flex items-center">
+                            <div className="absolute inset-0 flex items-center justify-center">
                                 <motion.div
                                     className="flex gap-4"
                                     animate={{ x: ["0%", "-50%"] }}

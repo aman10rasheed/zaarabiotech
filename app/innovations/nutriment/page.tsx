@@ -51,7 +51,7 @@ const products = [
     {
         name: 'GreenProtein Powder',
         description: 'Plant-based protein powder from spirulina and chlorella',
-        image: 'https://images.unsplash.com/photo-1622485831122-e89e6ec48e75?q=80&w=500',
+        image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=800',
     },
     {
         name: 'AlgaeOmega-3',
@@ -145,7 +145,7 @@ export default function NutrimentPage() {
                     >
                         <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1622485831122-e89e6ec48e75?q=80&w=1000"
+                                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1000"
                                 alt="Nutrition innovation"
                                 fill
                                 className="object-cover"
