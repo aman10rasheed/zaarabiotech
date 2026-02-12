@@ -23,43 +23,43 @@ const features = [
         icon: Target,
         title: "Support for Carbon Neutrality Goals",
         description: "Continuous CO₂ capture helps organizations lower their operational carbon footprint and progress toward carbon neutrality and net-zero commitments.",
-        color: "bg-blue-100 text-blue-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: TrendingUp,
         title: "Enable ESG & CSR Impact",
         description: "Obelia supports Environmental, Social, and Governance goals by delivering measurable carbon capture, improving employee wellbeing, and verified data for reporting.",
-        color: "bg-indigo-100 text-indigo-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: Smile,
         title: "Mental Wellbeing",
         description: "Obelia improves indoor air quality, helping reduce issues linked to Sick Building Syndrome such as headaches, fatigue, and poor concentration.",
-        color: "bg-rose-100 text-rose-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: Recycle,
         title: "Resource Recovery",
         description: "Carbon captured by Obelia is converted into valuable biomass, which is repurposed for products such as Spirulina-based cookies and poultry feed.",
-        color: "bg-amber-100 text-amber-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: Palette,
         title: "Customized Design & Aesthetic Integration",
         description: "Multiple Obelia models are tailored to match the aesthetics of each space, ensuring seamless integration into interiors, façades, and public areas.",
-        color: "bg-violet-100 text-violet-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: Award,
         title: "Support for Green Building Certification",
         description: "Obelia contributes to green building standards by improving indoor environmental quality and reducing carbon emissions.",
-        color: "bg-teal-100 text-teal-600"
+        color: "bg-emerald-100 text-emerald-600"
     },
     {
         icon: FileText,
         title: "Personalized, Data-Driven Projects",
         description: "Each installation is based on an Environmental Impact Study to assess CO₂ levels, identify optimal placement, and determine the right volume.",
-        color: "bg-cyan-100 text-cyan-600"
+        color: "bg-emerald-100 text-emerald-600"
     }
 ];
 
@@ -103,10 +103,10 @@ export const ObeliaFeatures = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-20"
                 >
-                    <h2 className="text-2xl md:text-4xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
+                    <h2 className="text-2xl md:text-6xl font-extrabold text-[#0c4a6e] mb-6 tracking-tight">
                         Why Your Space Needs <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">OBELIA</span>
                     </h2>
-                    <p className="text-sm md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-sm md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
                         Transforming environment with the power of nature and technology                     </p>
                 </motion.div>
 

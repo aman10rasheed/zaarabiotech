@@ -64,7 +64,7 @@ export const ObeliaProducts = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Circular Economy Splash */}
-                <div className="mb-16">
+                <div className="mb-26">
                     <div className="bg-[#0c4a6e] rounded-xl overflow-hidden shadow-2xl grid lg:grid-cols-[50%_50%]">
                         <div className="px-10 py-10 flex flex-col justify-center text-white">
                             <h2 className="text-2xl md:text-5xl font-bold mb-6">The Keystone of our <span className="text-[#4ade80]">Circular Economy</span></h2>

@@ -83,7 +83,7 @@ export const ObeliaArchitecture = () => {
 
                 <div className="bg-[#0c4a6e] rounded-3xl p-8 md:p-16 text-white overflow-hidden relative">
                     <div className="relative z-10 flex flex-col gap-6">
-                        <div className="max-w-4xl mx-auto">
+                        <div className="text-center max-w-4xl mx-auto">
                             <h3 className="text-3xl md:text-5xl font-bold mb-6 text-[#4ade80]">Core Technology</h3>
                             <p className="text-md md:text-lg text-gray-300 mb-6 leading-relaxed">
                                 At its core, Obelia integrates an algae-based bioreactor powered by a precision pressure motor
