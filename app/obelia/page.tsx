@@ -8,7 +8,6 @@ import { ObeliaProjects } from '@/components/obelia-page/obelia-projects';
 import { ObeliaCTA } from '@/components/obelia-page/obelia-cta';
 import { ObeliaVideos } from '@/components/obelia-page/obelia-videos';
 import { ObeliaClients } from '@/components/obelia-page/obelia-clients';
-import { ObeliaFAQ } from '@/components/obelia-page/obelia-faq';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 
@@ -25,7 +24,6 @@ export default function ObeliaPage() {
             <ObeliaVideos />
             <ObeliaProjects />
             <ObeliaClients />
-            <ObeliaFAQ />
             <ObeliaCTA />
             <Footer />
         </main>

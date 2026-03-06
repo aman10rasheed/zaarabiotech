@@ -48,7 +48,7 @@ export const ObeliaArchitecture = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] pb-4 to-[#166534] mb-3"
                     >
-                        The Urban Algae Project
+                        The Urban <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">Algae</span> Project
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ export const ObeliaArchitecture = () => {
                                                 src={src}
                                                 alt={`Obelia Installation ${index}`}
                                                 fill
-                                                className="object-cover"
+                                                className="object-contain"
                                             />
                                         </div>
                                     ))}

@@ -15,7 +15,7 @@ export const ObeliaCTA = () => {
                     viewport={{ once: true }}
                     className="text-xl md:text-5xl font-bold text-[#0c4a6e] mb-8 leading-tight"
                 >
-                    Jont The <span className="text-[#166534]">ALGAE REVOLUTION</span>
+                    Join The <span className="text-[#166534]">Algae Revolution</span>
                 </motion.h2>
 
                 <motion.p

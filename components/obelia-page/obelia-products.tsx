@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Box, Cpu, ShoppingBag, Sun, Monitor, Armchair } from 'lucide-react';
+import { ArrowRight, Box, Cpu, Sun, Monitor, Armchair } from 'lucide-react';
 import Image from 'next/image';
 
 const data = [
@@ -15,45 +15,45 @@ const data = [
 
 const products = [
     {
-        title: "Portable 30L Indoor Unit",
+        title: "Portable 30L / Indoor Unit",
         description: "Compact algae-based bio-reactor for executive rooms. Features Android-integrated IoT monitoring for real-time AQI.",
         icon: Box,
         capacity: "30L",
         image: "/products/Product01.png"
     },
     {
-        title: "Park Benches (Public)",
-        description: "Functional outdoor seating purifying air. IoT-enabled AQI monitoring with IP-rated public display.",
+        title: "Modular Seating 100L / Indoor Unit",
+        description: "Flexible indoor seating purifying air. Integrated IoT monitoring for air quality and system health.",
         icon: Armchair,
-        capacity: "300L",
+        capacity: "100L",
         image: "/products/Product02.png"
     },
     {
-        title: "Warehouse Direction Boards",
-        description: "Algae-based air purification + smart direction-guided display. IoT-linked guidance for navigation and safety.",
-        icon: Monitor,
-        capacity: "Custom",
+        title: "Solar Pwd Green Ad Board 300L / Outdoor Unit",
+        description: "Merges outdoor advertising with carbon-offsetting. Solar powered, autonomous operation with AQI display.",
+        icon: Sun,
+        capacity: "300L",
         image: "/products/Product03.png"
     },
     {
-        title: "Solar Pwd Green Ad Panel",
-        description: "Merges outdoor advertising with carbon-offsetting. Solar powered, autonomous operation with AQI display.",
-        icon: Sun,
-        capacity: "200L",
+        title: "Warehouse Direction Board 100L / Indoor Unit",
+        description: "Algae-based air purification + smart direction-guided display. IoT-linked guidance for navigation and safety.",
+        icon: Monitor,
+        capacity: "100L",
         image: "/products/Product04.png"
     },
     {
-        title: "Smart Bus Stop",
+        title: "Smart Bus Stop / Outdoor Unit",
         description: "Integrates bioreactor with public seating and digital display panels. Solar powered clean air for commuters.",
         icon: Cpu,
         capacity: "300L",
         image: "/products/Product05.png"
     },
     {
-        title: "Indoor Seating Spaces",
-        description: "Combines comfort with sustainability. Ideal for lobbies, lounges, and co-working spaces with real-time insights.",
+        title: "Public Seating 100L / Outdoor Unit",
+        description: "Functional outdoor seating purifying air. IoT-enabled AQI monitoring with IP-rated public display.",
         icon: Armchair,
-        capacity: "Custom",
+        capacity: "100L",
         image: "/products/Product06.png"
     }
 ];
@@ -112,7 +112,7 @@ export const ObeliaProducts = () => {
                                     src={product.image}
                                     alt={product.title}
                                     fill
-                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute top-4 right-4">
                                     <span className="px-3 py-1 rounded-full bg-black/50 text-white backdrop-blur-md text-xs font-bold uppercase tracking-wider border border-white/20">
@@ -122,10 +122,17 @@ export const ObeliaProducts = () => {
                             </div>
 
                             <div className="p-8 flex flex-col flex-grow">
-                                <div className="flex items-start justify-between mb-4">
-                                    <h3 className="text-xl font-bold text-[#0c4a6e] group-hover:text-[#166534] transition-colors line-clamp-2">{product.title}</h3>
-                                    <div className="w-10 h-10 rounded-full bg-[#166534] flex-shrink-0 flex items-center justify-center text-white shadow-lg shadow-[#166534]/20 ml-3">
-                                        <product.icon size={18} />
+                                <div className="flex items-start justify-between mb-4 gap-4">
+                                    <h3 className="text-xl font-bold text-[#0c4a6e] group-hover:text-[#166534] transition-colors line-clamp-2">
+                                        {product.title.split(' / ')[0]}
+                                    </h3>
+                                    <div className="flex-shrink-0 flex items-center bg-[#166534] rounded-full px-3 py-1 text-white shadow-lg shadow-[#166534]/20 gap-2">
+                                        <span className="text-[10px] font-bold uppercase tracking-wider whitespace-nowrap opacity-90">
+                                            {product.title.split(' / ')[1]}
+                                        </span>
+                                        <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                                            <product.icon size={14} />
+                                        </div>
                                     </div>
                                 </div>
 
