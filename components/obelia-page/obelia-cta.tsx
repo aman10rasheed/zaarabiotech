@@ -15,7 +15,7 @@ export const ObeliaCTA = () => {
                     viewport={{ once: true }}
                     className="text-xl md:text-5xl font-bold text-[#0c4a6e] mb-8 leading-tight"
                 >
-                    Join The <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">Algae</span>Revolution
+                    Join The <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-600">Algae</span> Revolution
                 </motion.h2>
 
                 <motion.p
