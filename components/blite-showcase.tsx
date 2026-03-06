@@ -31,15 +31,15 @@ export const BliteShowcase = () => {
             <ShoppingBag className="w-4 h-4" />
             Consumer Products
           </span>
-          
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a1a] mb-6">
             B-Lite:
             <span className="gradient-text"> Functional Nutrition</span>
           </h2>
-          
+
           <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-            A collaboration with ICAR-CIFT. Every bite delivers natural proteins, 
-            calcium, and iron. Our spirulina-based cookies are the perfect meal 
+            A collaboration with ICAR-CIFT. Every bite delivers natural proteins,
+            calcium, and iron. Our spirulina-based cookies are the perfect meal
             replacement for health-conscious individuals.
           </p>
 
@@ -101,14 +101,14 @@ export const BliteShowcase = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 + index * 0.1 }}
             >
-                <div className="relative aspect-square">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+              <div className="relative aspect-square">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-contain rounded-xl group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
 
             </motion.div>
           ))}

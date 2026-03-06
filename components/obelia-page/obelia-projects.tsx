@@ -17,14 +17,14 @@ const projects = [
         location: "Kerala State Disaster Management, Trivandrum, India",
         type: "Indoor",
         desc: "200L capacity corner seating deployed in the Directors office of KSDMA.",
-        image: "/obelia/6.png"
+        image: "/obelia/4.png"
     },
     {
         title: "Obelia Living Seat",
         location: "Kerala Startup Mission, Kochi, India",
         type: "Outdoor",
         desc: "300L capacity Outdoor seating deployed in the food court zone of the campus.",
-        image: "/obelia/4.png"
+        image: "/obelia/3.png"
     },
     {
         title: "Obelia Brand Pod",
@@ -38,7 +38,7 @@ const projects = [
         location: "Kerala State Disaster Management, Trivandrum, India",
         type: "Indoor",
         desc: "300L capacity reception desk deployed in the front office of KSDMA.",
-        image: "/obelia/3.png"
+        image: "/obelia/6.png"
     },
     {
         title: "Obelia Algaport (Portable)",

@@ -97,7 +97,7 @@ export const bliteProducts = [
     category: "sports",
     description: "The Athlete's Edge: Bio-engineered for peak performance and rapid recovery.",
     ingredients: "Algae-based formula designed for sports and fitness diet",
-    image: "/3_6b037721-c7f1-4282-8c21-620afd40adcb.webp",
+    image: "/biteProducts/1.webp",
     benefits: ["High Protein", "Energy Boost", "Rapid Recovery"],
   },
   {
@@ -106,7 +106,7 @@ export const bliteProducts = [
     category: "general",
     description: "Superfood Indulgence: The power of Spirulina masked in rich chocolate.",
     ingredients: "Spirulina (Blue-green algae), Demerara Sugar, Millets. 11.4g Single cell protein.",
-    image: "/5_0f8b2735-f7b1-4ff7-9644-2a514b45d021.webp",
+    image: "/biteProducts/2.webp",
     benefits: ["11.4g Protein", "Rich in Fiber", "Zero Cholesterol"],
   },
   {
@@ -115,7 +115,7 @@ export const bliteProducts = [
     category: "general",
     description: "Morning Momentum: Your coffee and breakfast, fused into one powerful bar.",
     ingredients: "Rye, Espresso, Spirulina. Complete meal replacement.",
-    image: "/image1.webp",
+    image: "/biteProducts/3.webp",
     benefits: ["Meal Replacement", "Natural Energy", "Convenient"],
   },
   {
@@ -124,7 +124,7 @@ export const bliteProducts = [
     category: "general",
     description: "Sustain Your Day: Dense nutrition from Chia and Coconut for lasting energy.",
     ingredients: "Chia seeds, Coconut. 2 bars replacing a full meal.",
-    image: "/8_bd507b4a-cf60-420b-8dfe-64ee5dcf88be.webp",
+    image: "/biteProducts/4.webp",
     benefits: ["Omega-3 Rich", "High Fiber", "Sustained Energy"],
   },
   {

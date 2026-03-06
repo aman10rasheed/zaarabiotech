@@ -25,8 +25,8 @@ export const ObeliaCTA = () => {
                     transition={{ delay: 0.1 }}
                     className="text-sm md:text-xl text-gray-600 mb-10 leading-relaxed uppercase"
                 >
-                    EMBRACE THE POWER OF NATURE&apos;S UNSUNG HEROES. CHOOSE OBELIA AND BE A PART OF THE SOLUTION,
-                    ONE LIQUID TREE AT A TIME. BREATHE EASY KNOWING YOU&apos;RE MAKING A DIFFERENCE FOR OUR PLANET.
+                    Embrace the power of nature&apos;s unsung heroes. Choose Obelia and be a part of the solution,
+                    one liquid tree at a time. Breathe easy knowing you&apos;re making a difference for our planet.
                 </motion.p>
 
                 <motion.div
