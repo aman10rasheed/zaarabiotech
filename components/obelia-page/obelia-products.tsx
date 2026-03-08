@@ -54,7 +54,7 @@ const products = [
         description: "Functional outdoor seating purifying air. IoT-enabled AQI monitoring with IP-rated public display.",
         icon: Armchair,
         capacity: "100L",
-        image: "/products/Product06.jpg"
+        image: "/products/product06.jpg"
     }
 ];
 
