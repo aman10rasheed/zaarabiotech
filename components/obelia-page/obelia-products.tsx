@@ -54,7 +54,7 @@ const products = [
         description: "Functional outdoor seating purifying air. IoT-enabled AQI monitoring with IP-rated public display.",
         icon: Armchair,
         capacity: "100L",
-        image: "/products/Product06.png"
+        image: "/products/Product06.jpg"
     }
 ];
 
@@ -85,12 +85,11 @@ export const ObeliaProducts = () => {
                                 alt="Circular Economy"
                                 width={1024}
                                 height={1700}
-                                className="w-full h-full object-contain"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </div>
                 </div>
-
                 {/* Product Grid */}
                 <div className="text-center mb-16">
                     <h2 className="text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0c4a6e] to-[#166534] pb-4 mb-6">Our Standard Design Profile</h2>

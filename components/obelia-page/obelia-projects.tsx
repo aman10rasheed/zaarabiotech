@@ -45,7 +45,7 @@ const projects = [
         location: "Park Center, Technopark, India",
         type: "Indoor",
         desc: "30L capacity portable units deployed in multiple conference halls and office in Park Center building.",
-        image: "/obelia/04.jpeg"
+        image: "/products/Product06.png"
     }
 ];
 
